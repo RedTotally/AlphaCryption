@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="encryption.js"></script>
+<script src="decryption.js"></script>
+<link href="style.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+ <!--Meta-->
+ <meta name="keywords" content="caesar cipher, message encryption, message decryption, encryption, encrypt, decryption, caesar cipher encryption, caesar cipher decryption, ROT13"/>
+ <meta name="description" content="We encrypt your message using a simple technique. In essence, the system separates all the characters within your message and changes their alphabet order to the next one. For example, the letter 'a' will be replaced by 'b', and 'n' will be replaced by 'o'. Basically, it's a Caesar cipher, or you can call it ROT13."/>
+
+<title>AlphaCryption | Caesar Cipher/ROT13 Encryption & Decryption</title>
+</head>
+<body class="body">
+    
+<!--TopText-->
+<div class="toptext-div">
+    <div>
+        
+        <h1>AlphaCryption <br> Caesar Cipher // ROT13</h1>
+        <p>A simple encryption tool you can rely on.</p>
+    </div>
+</div>
+
+<!--Content-->
+<div class="options-container">
+    <div class="options">
+<a class="encryptionbutton" onclick="encryption()">Encryption</a>
+<br>
+<a onclick="decryption()">Decryption</a>
+    </div>    
+</div>
+
+<div class="functions-container">
+    <div class="functions-box">
+
+        <div class="content-div encryption" id="encryptionsection">
+            <span class="material-symbols-outlined">
+                lock
+                </span>
+            <h1>Message Encryption</h1>
+            <p>Need to deliver a simple message with encryption? A simple click and it's done.</p>
+        <input id="input" placeholder="Enter your message..."><br>
+        <a onclick="senden()">Encrypt</a>
+    </div>
+
+        <div class="content-div decryption" id="decryptionsection">
+            <span class="material-symbols-outlined">
+                lock_open
+                </span>
+            <h1>Message Decryption</h1>
+            <p>Take a look at the original message that was encrypted by us.</p>
+        <input id="input2" placeholder="Enter your message..."><br>
+        <a onclick="sendde()">Decrypt</a>
+    </div>
+
+        <div class="output" id="output">
+            <p>Encryption Output: </p>
+        </div>
+
+        <div class="output2" id="output2">
+            <p>Decryption Output: </p>
+        </div>
+    
+    </div>
+</div>
+
+<!--Intro-->
+<div class="main-intro-container">
+
+    <div class="intro-container">
+
+<div class="intro-img-div">
+    <img src="images/intro-1.png">
+</div>
+<div>
+    <h1>Moving the order of the alphabet</h1>
+    <h2>This is how we encrypt your provided information</h2>
+    <p>We encrypt your message using a simple technique. In essence, the system separates all the characters within your message and changes their alphabet order to the next one. For example, the letter 'a' will be replaced by 'b', and 'n' will be replaced by 'o'.</p>
+</div>
+
+
+    </div>
+
+</div>
+
+<!--Footer-->
+<footer>
+    <div class="footer">
+<div class="footer-container">
+<p>Project of • <a target="_blank" href="https://godotwebs.com">GoDotWebs</a></p>
+<p class="self-intro"> Organization</p>
+</div>
+    </div>
+</footer>
+
+</body>
+</html>

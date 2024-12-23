@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   color: #fafafa;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.body{   
+    background-image: url(images/background.jpg);
+    background-size: 100%;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+.functions-container{
+    display: flex;
+    justify-content: center;
+}
+
+.options-container{
+    display: flex;
+    justify-content: center;
+}
+
+.functions-box{
+    border-width: .1em;
+    padding: 3em 6em 5em;
+    border-style: solid;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: .3em;
+    
+    box-shadow: #000000 0em 0em 2em;
+    width: 45em;
+
+}
+
+.options{
+    border-width: .1em;
+    padding: 1em 6em 1em 1em;
+    border-style: solid;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: .3em;
+    box-shadow: #000000 0em 0em 2em;
+    width: 50em;
+    margin-bottom: 1em;
+    display: flex;
+}
+
+.options a{
+    padding: 0em 1em;
+    transition: .5s;
+}
+
+.options a:hover{
+    cursor: pointer;
+text-decoration: underline;
+}
+
+.decryption{
+    display: none;
+}
+
+.content-div p{
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+}
+
+.content-div input{
+background-color: transparent;
+border-style: solid;
+padding: 1em 1em 1em 1em;
+width: 25em;
+border-width: 0em 0em .1em 0em;
+border-color: #fafafa;
+margin-bottom: 2em;
+transition: .5s;
+outline: none;
+}
+
+.content-div a{
+font-size: .7em;
+cursor: pointer;
+    padding: 1em 15em 1em 1em;
+    border-style: solid;
+    border-width: .1em;
+    border-color: #fafafa;
+    transition: .5s;
+
+}
+
+.content-div a:hover{
+    background-color: #fafafa;
+    color: #1a1a1a;
+}
+
+.output{
+    border-radius: .3em;
+    border-width: .1em;
+    padding: 1em;
+    margin-top: 3em;
+    border-style: solid;
+    display: none;
+}
+
+.output2{
+    border-radius: .3em;
+    border-width: .1em;
+    padding: 1em;
+    margin-top: 3em;
+    border-style: solid;
+    display: none;
+}
+
+.toptext-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.toptext-div div h1{
+    font-size: 5em;
+    margin-bottom: .2em;
+    background: linear-gradient(100deg, #7746fd, #ff4545);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-container{
+    margin-top: 15em;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.neoblotlogo{
+    width: 3.3em;
+    height: 3.3em;
+}
+
+.self-intro{
+    padding-left: .3em;
+}
+
+.intro-container{
+    margin-top: 17em;
+    display: flex;
+    justify-content: center;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+.intro-container div img{
+    padding-top: 1em;
+}
+
+.intro-container div h1{
+    font-size: 3em;
+    margin-bottom: -.3em;
+}
+
+.intro-container div h2{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.intro-container div{
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #000000;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    border-style: solid;
+    border-width: .1em 0em .1em 0em;
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .intro-container div img{
+        padding-top: 2em;
+        width: 30em;
+    }
+
+    .intro-container{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+}
+
+@media only screen and (max-width: 1080px) {
+
+.intro-img-div{
+    display: flex;
+    justify-content: center;
+}
+
+    .intro-container{
+        display: block;
+    }
+
+.functions-box{
+width: 70%;
+}
+
+.options{
+    width: 70%;
+    padding: 1em 11em 1em 1em;
+}
+
+.toptext-div div h1{
+    font-size: 4em;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .intro-container div img{
+        width: 18em;
+    }
+
+    .intro-container{
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+
+    .toptext-div div h1{
+        font-size: 3em;
+    }
+
+    .functions-box{
+        padding-left: 3em;
+        width: 70%;
+        }
+        
+        .options{
+            padding: 1em 8em 1em 1em;
+        }
+
+        .content-div input{
+            width: 70%;
+            height: 3em;
+        }
+        
+        .content-div a{
+          padding-left: 1em;
+          padding-right: 10em;
+          padding-top: 1.5em;
+          padding-bottom: 1.5em;
+        }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .options a{
+       font-size: .7em;
+       padding: 0em .3em;
+    }
+
+    .toptext-div div h1{
+        font-size: 2.5em;
+    }
+
+    .functions-box{
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        width: 100%;
+        }
+    
+    }
+
+@media only screen and (max-width: 300px) {
+
+.body{
+    display: none;
+}
+
+}
